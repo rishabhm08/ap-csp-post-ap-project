@@ -1,0 +1,99 @@
+<html>
+    <head>
+        <title>
+            McDonalds.com
+        </title>
+        <link rel="icon" href="mcDonalds_logo.jfif" type="image/x-icon"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+      
+        <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
+       
+        <link rel="stylesheet" type="text/css" href="store.css">
+    </head>
+
+    <body>
+        <div id="drop_shadow"></div>
+
+        <div id="header">
+            <h1>
+            McDonalds 
+            </h1>
+        </div>
+        <br>
+        <img src="mcDonalds_logo.jfif" id="mcDonalds_logo">
+        <a href="cart.html" ><img src="cart_logo.png" id="cart_logo" onclick ="total()"></a>        
+        <br><br><br><br>
+        <div id="first_option">
+            <img id="bigMac" src="bigMac.jfif">
+        </div>
+        <div id="first_option_description">
+            <h2 id="big_mac_label">
+                Big Mac 
+            </h2>
+            <br>
+            <p id="big_mac_description">
+                Indulge in the irresistible appeal of the legendary Big Mac, a true culinary masterpiece from McDonald's. 
+                Sink your teeth into juicy beef patties perfectly complemented by the tantalizing combination of special sauce, crisp lettuce, 
+                melted cheese, tangy pickles, and savory onions. All hugged by a soft, sesame seed bun that adds an extra layer of deliciousness. 
+                Experience the sheer satisfaction and mouthwatering flavors that have made the Big Mac an iconic choice for burger aficionados everywhere.
+                Don't miss out on the ultimate burger experience that will leave you craving for more. Treat yourself to a Big Mac today and discover 
+                why it's hailed as a timeless classic in the world of burgers!
+            </p>
+            <button id="bigMacBtn" onclick="bigMac(), addedToCartBigMac()">Add to Cart</button>
+        </div>
+        <br>
+        <br>
+        <div id="second_option">
+            <img id="mcnuggets" src="mcnuggets.jpg">
+        </div>
+        <div id="second_option_description">
+            <h2 id="mcnuggets_label">
+                Chicken McNuggets
+            </h2>
+            <br>
+            <p id="mcnuggets_description">
+                Savor the crispy and golden delight of McDonald's Chicken McNuggets, an irresistible treat that will captivate your taste buds. 
+                Bite into tender pieces of all-white meat chicken, perfectly seasoned and coated to perfection. Whether you prefer to dip them in
+                tangy BBQ sauce, creamy ranch, or sweet and sour, each nugget delivers a satisfying crunch and succulent flavor that will have you
+                coming back for more. Indulge in the ultimate snack or meal option that guarantees pure enjoyment and a finger-licking experience.
+                Treat yourself to the legendary Chicken McNuggets and discover why they have become a beloved favorite for both kids and adults alike.
+            </p>
+            <button id="mcnuggetsBtn" onclick="mcnugget(), addedToCartMcNugget()"> Add to Cart </button>
+        </div>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <div id="third_option">
+            <img id="icedMochaImg" src="icedMochaImg.png">
+            <div id="thirdOption_description">
+                <h2 id="icedMocha_label">
+                    Iced Mocha
+                </h2>
+                <br>
+                <p id="icedMocha_description">
+                    Quench your thirst and indulge in the perfect blend of rich, velvety
+                    chocolate and smooth espresso with McDonald's Iced Mocha. With every 
+                    sip, you'll experience a harmonious symphony of flavors that will 
+                    awaken your senses and satisfy your cravings. The chilled, creamy 
+                    delight is expertly crafted, combining the boldness of coffee with the 
+                    lusciousness of chocolate, all topped off with a dollop of whipped 
+                    cream. Whether you're looking for a refreshing pick-me-up or a delightful 
+                    treat, the McDonald's Iced Mocha is the ultimate beverage to elevate your day and 
+                    provide a moment of pure indulgence. Treat yourself to this irresistible concoction 
+                    and experience a blissful fusion of flavors like never before.
+                </p>
+                <button id="icedMochaBtn" onclick="icedMocha(), addedToCartMocha()"> Add to Cart </button>
+            </div>
+        </div>
+        <br>
+        <br>
+
+    </body>
+    <footer>
+        
+    </footer>
+    <script src="store.js"></script>
+</html>
